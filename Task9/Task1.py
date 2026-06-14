@@ -1,4 +1,4 @@
-f = open("Task1")
+f = open("2A.txt")
 
 cnt = 0
 
