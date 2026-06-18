@@ -12,4 +12,4 @@ for s in f:
         if sum(a2)**2 > sum(a1)**2:
             cnt += 1
 
-print(cnt)            
+print(cnt)
