@@ -1,11 +1,16 @@
-for x in (1,1000):
-    a = 125**200 + 5**x + 74
+
+for x in range(1, 2031):
+    num = 6**260 + 6**160 + 6**60 - x
+
     k = 0
 
-    while a:
-        if a % 5 == 4:
+    while num > 0:
+        if num%6==0:
             k+=1
-        a//=5
 
-    if a==100:
+        num//=6
+
+    if k == 202:
         print(x)
+        break
+
