@@ -1,29 +1,29 @@
 from turtle import *
 
-tracer(0)
 screensize(2000, 2000)
+tracer(0)
 lt(90)
-k = 20
+k = 10
 
 for i in range(2):
-    fd(14*k)
-    lt(270)
-    bk(12*k)
+    forward(28*k)
+    rt(90)
+    forward(18*k)
     rt(90)
 
 up()
 
-fd(9*k)
+forward(14 * k)
 rt(90)
-bk(7*k)
+forward(10 * k)
 lt(90)
 
 down()
 
 for i in range(2):
-    fd(13*k)
+    forward(30*k)
     rt(90)
-    fd(6*k)
+    forward(7*k)
     rt(90)
 
 up()
@@ -31,4 +31,7 @@ up()
 for x in range(-30, 30):
     for y in range(-30, 30):
         goto(x*k, y*k)
-        dot(3, 'blue')
+        dot(3, 'red')
+
+done()
+
