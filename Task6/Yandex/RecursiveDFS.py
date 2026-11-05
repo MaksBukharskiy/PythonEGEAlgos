@@ -1,10 +1,10 @@
-def max_depth(tree1: TreeNode | None) -> int:
-    if not tree1:
+def solutionTreeLength(tree: TreeNode | None) -> int:
+    if not tree:
         return 0
 
-    left_depth = max_depth(tree1.left)
-    right_depth = max_depth(tree1.right)
+    treeLeft = solutuionTreeLenght(tree.left)
+    treeRight = solutuionTreeLenght(tree.rigth)
 
-    ans = max(left_depth, right_depth) + 1
+    ans =  max(treeLeft, treeRight) +1
 
     return ans
